@@ -4,28 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        caption {
+            background-color: #FF4D1C;
+            color: #ffffff;
+            
+        }
+        .tieude {
+            color: blue;
+            float: left;
+        }
+        .luachon {
+            color: #FFAF8F;
+        }
+    </style>
     <title>Document</title>
 </head>
 <body>
-    <form method="post">
-        <h1 style="background-color: orange; color: white; text-align: center; width: 30%;">SỞ THÍCH CỦA BẠN</h1>
-        <label for="yourname">Họ và tên</label>
-        <input type="text" id="yourname" size="20">
-        <br>
-        <label for="email">Email</label>
-        <input type="text" id="email" size="20">
-        <br>
-        <label for="st">Sở thích</label>
-        <input type="checkbox" name="hobby"> Thể thao
-        <input type="checkbox" name="hobby"> Âm nhạc
-        <input type="checkbox" name="hobby"> Đọc sách<br>
-        <input type="checkbox" name="hobby"> Lưới web
-        <input type="checkbox" name="hobby"> Chơi game
-        <input type="checkbox" name="hobby"> Điện ảnh
-        <input type="checkbox" name="hobby"> Du lịch
-        <br>
-        <input type="submit" value="Gửi thông tin">
-        <input type="reset" value="Nhập lại">
-    </form>
+    <table>
+        <caption>SỞ THÍCH CỦA BẠN</caption>
+        <tr>
+            <td class="tieude">Họ và tên</td>
+            <td><input type="text" id="yourname" size="25"></td>
+        </tr>
+        <tr>
+            <td class="tieude">Email</td>
+            <td><input type="text" id="yourname" size="20"></td>
+        </tr>
+        <tr>
+            <td class="tieude">Sở thích</td>
+            <td>
+                <table>
+                    <tr>
+                        <td class="luachon"><input type="checkbox">Thể thao </td>
+                        <td class="luachon"><input type="checkbox">Âm nhạc </td>
+                        <td class="luachon"><input type="checkbox">Đọc sách </td>
+                    </tr>
+                    <tr>
+                        <td class="luachon"><input type="checkbox">Lướt web </td>
+                        <td class="luachon"><input type="checkbox">Chơi game </td>
+                        <td class="luachon"><input type="checkbox">Điện ảnh </td>
+                    </tr>
+                    <tr>
+                        <td class="luachon"><input type="checkbox">Du lịch </td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Gửi thông tin"></td>
+                        <td><input type="reset" value="Nhập lại"</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>
